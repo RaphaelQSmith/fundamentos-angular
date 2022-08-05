@@ -1,0 +1,11 @@
+<p>render-list works!</p>
+
+<h2>Rendering a data list</h2>
+
+<ul>
+    <li *ngFor="let celular of celulares">
+        <strong>{{celular.nome}}</strong>
+        <p>{{celular.descricao}}</p>
+        <span>{{ celular.esgotado ? "Esgotado" : "Disponivel" }}</span>
+    </li>
+</ul>
